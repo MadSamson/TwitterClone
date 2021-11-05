@@ -32,6 +32,20 @@
         border-bottom: solid 1px rgb(228, 228, 228);
         height: 53px;
         padding-top: 5px;
+        padding-left: 10px ;
+      }
+      .new-tweet{
+        height: 100px;
+        border-bottom:solid 1px rgb(228, 228, 228);
+      }
+      .text-area{
+        height: inherit;
+        width: inherit;
+        border: none;
+        resize: none;
+      }
+      .text-area:focus-visible{
+        outline: 0;
       }
       .list-group{
       margin-left: 10%; 
@@ -54,6 +68,7 @@
       }
       .searchContainer{
       margin-left: 15px;
+      margin-bottom: 5px;
       }
       div div input{
       text-align: center;
@@ -67,6 +82,13 @@
       margin: auto;
       margin-top: 10px;
       margin-bottom: 10px;
+    }
+    .trends{
+      background-color: rgb(241, 241, 241);
+      width: 80%;
+      margin-left: 15px;
+      border-radius:10px;
+      padding: 10px;
     }
     </style>
 </head>
@@ -92,110 +114,157 @@
       <!-- HOME -->
       <div class="home">
         <table style="height: 53px;">
-          <tr><td class="align-middle"><h2>Home</h2></td></tr>
+          <tr><td class="align-middle"><h3>Home</h3></td></tr>
         </table>
       </div>
+
       <!-- Tweets -->
-        <div class="tweet">
-          <div class="container">
-            <div class="row">
-              <div class="col-2">
-                <img src="BBC-News.png" alt="bbc news" class="profile-photo">
-              </div>
-              <div class="col">
-                BBC News (World)
-              </div>
-              <div class="col-2">
-                <i class="bi bi-three-dots"></i>
-              </div>
-            <div class="row">
-              <div class="col-2">
-                <!-- empty -->
-              </div>
-              <div class="col-10">
-                How a medieval English law affects the US gun control debate
-              </div>
+      <div class="new-tweet">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="PresidentOfTheUniverse.png" alt="President Of The Universe" class="profile-photo">
             </div>
-            <div class="row">
-              <div class="col-3"><i class="bi bi-chat"></i></div>
-              <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
-              <div class="col-3"><i class="bi bi-heart"></i></div>
-              <div class="col-3"><i class="bi bi-share"></i></div>
-            </div>
+            <div class="col-10" style="vertical-align: middle; height: 50px; line-height: 50px;">
+              <textarea class="text-area" placeholder="What's happening"></textarea>
             </div>
           </div>
         </div>
-
-        <div class="tweet">
-          <div class="container">
-            <div class="row">
-              <div class="col-2">
-                <img src="cyanide&happiness.png" alt="cyanide and happiness" class="profile-photo">
-              </div>
-              <div class="col">
-                Cyanide And Happiness
-              </div>
-              <div class="col-2">
-                <i class="bi bi-three-dots"></i>
-              </div>
-            <div class="row">
-              <div class="col-2">
-                <!-- empty -->
-              </div>
-              <div class="col-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem aperiam delectus consequatur pariatur ad, itaque dolores minima accusamus nam voluptatum ipsam asperiores. Culpa provident porro odio dolorum dolore modi.
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3"><i class="bi bi-chat"></i></div>
-              <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
-              <div class="col-3"><i class="bi bi-heart"></i></div>
-              <div class="col-3"><i class="bi bi-share"></i></div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tweet">
-          <div class="container">
-            <div class="row">
-              <div class="col-2">
-                <img src="KimJongUn.png" alt="Kim Jong Un" class="profile-photo">
-              </div>
-              <div class="col">
-                Supreme leader
-              </div>
-              <div class="col-2">
-                <i class="bi bi-three-dots"></i>
-              </div>
-            <div class="row">
-              <div class="col-2">
-                <!-- empty -->
-              </div>
-              <div class="col-10">
-                I am awesome, you'r not, I have nukes, you don't
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3"><i class="bi bi-chat"></i></div>
-              <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
-              <div class="col-3"><i class="bi bi-heart"></i></div>
-              <div class="col-3"><i class="bi bi-share"></i></div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nesciunt ipsum animi sapiente rem illum eveniet quae corrupti voluptates beatae, sequi odio quaerat? Rem aut ratione at corrupti explicabo earum.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente amet sunt ducimus sint vitae labore voluptate enim ad esse ipsum provident, temporibus, natus dignissimos ullam quam corrupti laudantium atque. Ullam?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae provident exercitationem aut aliquid harum hic est quisquam, delectus, placeat distinctio eligendi asperiores, doloribus accusamus atque quo dolorem alias iusto reiciendis?
       </div>
+
+      <div class="tweet">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="BBC-News.png" alt="bbc news" class="profile-photo">
+            </div>
+            <div class="col">
+              BBC News (World)
+            </div>
+            <div class="col-2">
+              <i class="bi bi-three-dots"></i>
+            </div>
+          <div class="row">
+            <div class="col-2">
+              <!-- empty -->
+            </div>
+            <div class="col-10">
+              How a medieval English law affects the US gun control debate
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><i class="bi bi-chat"></i></div>
+            <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
+            <div class="col-3"><i class="bi bi-heart"></i></div>
+            <div class="col-3"><i class="bi bi-share"></i></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="cyanide&happiness.png" alt="cyanide and happiness" class="profile-photo">
+            </div>
+            <div class="col">
+              Cyanide And Happiness
+            </div>
+            <div class="col-2">
+              <i class="bi bi-three-dots"></i>
+            </div>
+          <div class="row">
+            <div class="col-2">
+              <!-- empty -->
+            </div>
+            <div class="col-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem aperiam delectus consequatur pariatur ad, itaque dolores minima accusamus nam voluptatum ipsam asperiores. Culpa provident porro odio dolorum dolore modi.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><i class="bi bi-chat"></i></div>
+            <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
+            <div class="col-3"><i class="bi bi-heart"></i></div>
+            <div class="col-3"><i class="bi bi-share"></i></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="KimJongUn.png" alt="Kim Jong Un" class="profile-photo">
+            </div>
+            <div class="col">
+              Supreme leader
+            </div>
+            <div class="col-2">
+              <i class="bi bi-three-dots"></i>
+            </div>
+          <div class="row">
+            <div class="col-2">
+              <!-- empty -->
+            </div>
+            <div class="col-10">
+              I am awesome, you'r not, I have nukes, you don't
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><i class="bi bi-chat"></i></div>
+            <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
+            <div class="col-3"><i class="bi bi-heart"></i></div>
+            <div class="col-3"><i class="bi bi-share"></i></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img src="among-us-icon.png" alt="Among us" class="profile-photo">
+            </div>
+            <div class="col">
+              Red
+            </div>
+            <div class="col-2">
+              <i class="bi bi-three-dots"></i>
+            </div>
+          <div class="row">
+            <div class="col-2">
+              <!-- empty -->
+            </div>
+            <div class="col-10">
+              There is an imposter among us!!!!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sit adipisci beatae vitae aut repudiandae modi incidunt saepe unde illo mollitia officia, autem maxime dolor non maiores doloremque inventore cumque?
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3"><i class="bi bi-chat"></i></div>
+            <div class="col-3"><i class="bi bi-arrow-repeat"></i></div>
+            <div class="col-3"><i class="bi bi-heart"></i></div>
+            <div class="col-3"><i class="bi bi-share"></i></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="col-4 left-side">
       <div class="searchContainer">
         <input type="text" placeholder="Search Tweeter" class="search">
+      </div>
+      <div class="trends">
+        <h3>Trends</h3>
+        <ol>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur ipsum eos doloremque libero a fugiat voluptas dolorem modi corporis ullam, deserunt tenetur quod nulla officiis necessitatibus? Quod, quidem illo.
+          </li>
+        </ol>
       </div>
     </div>
   </div>
