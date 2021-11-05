@@ -27,6 +27,35 @@
               display: none;
           }
       }
+      .menuBar{
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+      }
+      .btn {
+        text-align: left;
+        margin: 10px;
+        font-size: 20px;
+      }
+      .blueBTN{
+        background-color: rgb(26, 140, 216);
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-size: 20px;
+      }
+      .blueBTN2{
+        background-color: rgb(29, 155, 240);
+        border: none;
+        color: white;
+        border-radius: 50px;
+        height: 35px;
+        width: 80px;
+      }
       .home{
         background-color: white;
         border-bottom: solid 1px rgb(228, 228, 228);
@@ -35,8 +64,10 @@
         padding-left: 10px ;
       }
       .new-tweet{
-        height: 100px;
+        /* height: 100px; */
         border-bottom:solid 1px rgb(228, 228, 228);
+        margin-top: 5px;
+        padding-bottom: 6px;
       }
       .text-area{
         height: inherit;
@@ -51,14 +82,14 @@
       margin-left: 10%; 
       } 
       .list-group-item {
-
-              border: none;
-              border-radius: 50px;
-              font-size: 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 20px;
       }
       .tweet{
       /* border-top: solid 1px rgb(233, 233, 233); */
       border-bottom: solid 1px rgb(233, 233, 233);
+      margin-top: 5px;
       }
       .profile-photo{
       padding: 3px;
@@ -95,18 +126,18 @@
 <body>
   <div class="row">
     <div class="col-3 right-side">
-      <div>
-        <div class="list-group textMenubar">
-            <a href="#" class="list-group-item list-group-item-action"></a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-house"></i> Home</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-hash"></i> Explore</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-bell"></i> Notification</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-envelope"></i> Messages</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-bookmark"></i> Bookmarks</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-card-list"></i> list</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-person"></i> Profile</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-three-dots"></i> More</a>
-            <a href="#" class="list-group-item list-group-item-action"></a>
+      <div class="menuBar">
+          <div class="btn-group-vertical">
+            <button type="button" class="btn" style="color: rgb(26, 140, 216);"><i class="bi bi-twitter"></i></button>
+            <button type="button" class="btn"><i class="bi bi-house"></i> Home</button>
+            <button type="button" class="btn"><i class="bi bi-hash"></i> Explore</button>
+            <button type="button" class="btn"><i class="bi bi-bell"></i> Notification</button>
+            <button type="button" class="btn"><i class="bi bi-envelope"></i> Messages</button>
+            <button type="button" class="btn"><i class="bi bi-bookmark"></i> Bookmarks</button>
+            <button type="button" class="btn"><i class="bi bi-card-list"></i> list</button>
+            <button type="button" class="btn"><i class="bi bi-person"></i> Profile</button>
+            <button type="button" class="btn"><i class="bi bi-three-dots"></i> More</button>
+            <button type="button" class="blueBTN">tweet</button>
           </div>
       </div>
     </div>
@@ -118,7 +149,7 @@
         </table>
       </div>
 
-      <!-- Tweets -->
+      <!-- new tweets -->
       <div class="new-tweet">
         <div class="container">
           <div class="row">
@@ -129,9 +160,20 @@
               <textarea class="text-area" placeholder="What's happening"></textarea>
             </div>
           </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4" style="color: rgb(29, 155, 240);">
+              <i class="bi bi-card-image"></i>
+              <i class="bi bi-emoji-smile"></i>
+              <i class="bi bi-calendar"></i>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3"><button class="blueBTN2">Tweet</button></div>
+          </div>
         </div>
       </div>
 
+      <!-- Tweets -->
       <div class="tweet">
         <div class="container">
           <div class="row">
