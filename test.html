@@ -119,6 +119,22 @@
       width: 80%;
       margin-left: 15px;
       border-radius:10px;
+      /* padding: 10px; */
+      margin-bottom: 10px;
+    }
+    .list-group{
+      width: 100%;
+    }
+    .list-group-item {
+      width: 100%;
+    }
+    .listOfTrending{
+      font-size: 90%;
+      margin: 5px;
+    }
+    .show-more-btn{
+      color: rgb(29, 155, 240);
+      border: none;
       padding: 10px;
     }
     </style>
@@ -301,13 +317,26 @@
         <input type="text" placeholder="Search Tweeter" class="search">
       </div>
       <div class="trends">
-        <h3>Trends</h3>
+        <div style="padding: 10px;"><h3>Trends</h3></div>
         <ol>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur ipsum eos doloremque libero a fugiat voluptas dolorem modi corporis ullam, deserunt tenetur quod nulla officiis necessitatibus? Quod, quidem illo.
-          </li>
+          <li class="listOfTrending">Trending <br> <b>Magdalena Andersson</b> <br>3,423 Tweets</li>
+          <li class="listOfTrending">Trending <br> <b>Magdalena Andersson</b> <br>3,423 Tweets</li>
+          <li class="listOfTrending">Trending <br> <b>Magdalena Andersson</b> <br>3,423 Tweets</li>
+          <li class="listOfTrending">Trending <br> <b>Magdalena Andersson</b> <br>3,423 Tweets</li>
+          <li class="listOfTrending">Trending <br> <b>Magdalena Andersson</b> <br>3,423 Tweets</li>
         </ol>
+        <div>
+          <button class="show-more-btn">Show More</button>
+        </div>
       </div>
+      <div class="trends">
+        <div style="padding: 10px;"><h3>Who to follow</h3></div>
+        <div class=""></div>
+        <div>
+          <button class="show-more-btn">Show More</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
